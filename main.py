@@ -15,6 +15,13 @@ def decToBin():
             binary.insert(0,1)
     print(binary)
 
+def binToDec():
+    print("Typ hier uw binaire nummer in")
+    binaryInput = int(input)
+    [int(d) for d in str(binaryInput)]
+
+
+
 # Start script
 
 while True:
@@ -30,7 +37,7 @@ while True:
 
     elif opt == "B" or opt == "b":
         print(" ")
-        print("Deze functie is nog niet beschikbaar")
+        binToDec()
         print(" ")
     
     elif opt == "C" or opt == "c":
