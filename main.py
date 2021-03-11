@@ -15,11 +15,17 @@ def decToBin():
             binary.insert(0,1)
     print(binary)
 
-def binToDec():
-    print("Typ hier uw binaire nummer in")
-    binaryInput = int(input)
-    [int(d) for d in str(binaryInput)]
 
+def binToDec():
+
+  #  TODO: Separate input into binary digits and multiply by correct power
+  #        Fix this fucking mess
+  # print("Typ hier uw binaire nummer in")
+  #  binaryInput = int(input)
+  #  [int(d) for d in str(binaryInput)]
+  
+  print("Deze functie is nog niet beschikbaar.")
+  
 
 
 # Start script
