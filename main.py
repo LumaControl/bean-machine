@@ -18,14 +18,28 @@ def decToBin():
 
 def binToDec():
 
-  #  TODO: Separate input into binary digits and multiply by correct power
-  #        Fix this fucking mess
-  # print("Typ hier uw binaire nummer in")
-  #  binaryInput = int(input)
-  #  [int(d) for d in str(binaryInput)]
-  
-  print("Deze functie is nog niet beschikbaar.")
-  
+    arrayCounter = 0
+    #  TODO: make it work
+    strInput = input()
+
+    # Separates the string into separate digits in an array and defines the length of it
+    convertedArray = [int(d) for d in str(strInput)]
+    arrayLength = len(convertedArray)
+    
+    # just some base variable declarations
+    power  = 0
+    decResult  = 0
+    counter = 0
+
+    
+    while arrayLength != 0:
+        decResult = decResult + convertedArray[counter] * 2 ** power
+        counter = counter + 1
+        power = power + 1
+        arrayLength = arrayLength - 1
+    
+    print(decResult)
+
 
 
 # Start script
