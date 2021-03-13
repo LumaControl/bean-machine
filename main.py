@@ -19,7 +19,7 @@ def decToBin():
 def binToDec():
 
     arrayCounter = 0
-    #  TODO: make it work
+    #  TODO: make even numbers output the correct value too.
     strInput = input()
 
     # Separates the string into separate digits in an array and defines the length of it
