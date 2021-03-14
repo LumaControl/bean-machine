@@ -29,6 +29,7 @@ def binToDec():
 
     strInput = input()
 
+    # Checks if input is binary
     checkBin = set(strInput)
     checkSource = {'0','1'}
 
@@ -39,6 +40,7 @@ def binToDec():
         print("dit is geen binair getal!")
         print(" ")
         return
+
 
     # Separates the string into separate digits in an array and defines the length of it
     convertedArray = [int(d) for d in str(strInput)]
@@ -57,7 +59,7 @@ def binToDec():
 
 
 
-# Start script
+# start of main function 
 
 while True:
     print("Binair naar decimaal of decimaal naar binair?")
