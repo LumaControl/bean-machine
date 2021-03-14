@@ -27,7 +27,7 @@ def binToDec():
     arrayLength = len(convertedArray)
     
     # just some base variable declarations
-    power  = 0
+    power  = arrayLength - 1
     decResult  = 0
     counter = 0
 
@@ -35,7 +35,7 @@ def binToDec():
     while arrayLength != 0:
         decResult = decResult + convertedArray[counter] * 2 ** power
         counter = counter + 1
-        power = power + 1
+        power = power - 1
         arrayLength = arrayLength - 1
     
     print(decResult)
